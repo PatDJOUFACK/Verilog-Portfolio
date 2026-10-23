@@ -13,6 +13,7 @@ The designs are developed and simulated using Icarus Verilog, with GTKWave avail
 
 ### Sequential Logic
 - **[Timer Sequence Controller](sequential_logic/timer_sequence_controller/README.md)** - A timer and a finite state machine (FSM) implemented as separate, interconnected Verilog modules. Includes dedicated testbenches for the timer and the integrated controller.
+- **[FSM Register Sequence](sequential_logic/fsm_register_controller/README.md)** - A six-state finite state machine controlling a 4-bit shift register. Includes synchronous reset and a testbench with automatic output checkes.
 
 ## Tools
 - Verilog HDL (classical Verilog)
@@ -23,6 +24,7 @@ The designs are developed and simulated using Icarus Verilog, with GTKWave avail
 ## Repository Structure
 
 ```text
+
 Verilog-Portfolio/
 ├── README.md
 ├── .gitignore
@@ -38,12 +40,16 @@ Verilog-Portfolio/
 │           ├── and_gate.v
 │           └── xor_gate.v
 └── sequential_logic/
-    └── timer_sequence_controller/
+    ├── timer_sequence_controller/
+    │   ├── README.md
+    │   ├── timer.v
+    │   ├── sequence_controller.v
+    │   ├── tb_timer.v
+    │   └── tb_sequence_controller.v
+    └── fsm_register_sequence/
         ├── README.md
-        ├── timer.v
-        ├── sequence_controller.v
-        ├── tb_timer.v
-        └── tb_sequence_controller.v
+        ├── sequence_register.v
+        └── tb_sequence_register.v
 ```
 
 ## Project Goals
